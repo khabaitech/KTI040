@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<style>
+		body{
+			background: url(flo.webp);
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+
+
+#page{
+	height: 300px;
+	width: 98vw;
+}
+.nav-link{
+	color: skyblue;
+	margin-left: 200px;
+	margin-top: 10px;
+	font-size: 17px;
+}
+.nav-link:hover{
+	color: #fff;
+}
+#nav{
+	height: 70px;
+	width: 99vw;
+	background-color:black;
+	box-shadow: 0px 0px 15px skyblue;
+	
+}
+.moving-text-container{
+	display: inline-block;
+	height: 40px;
+	width: 300px;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 300px;
+	left: 50px;
+   
+	font-size: 25px;
+	color: skyblue;
+   
+	position: absolute;
+	
+   
+	overflow: hidden;
+}
+			.moving-text-container > p{
+	padding: 0;
+	margin: 5px;
+
+}
+.moving-text{
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	letter-spacing: 3px;
+	position: absolute;
+	animation: upDown 10s infinite;
+}
+
+@keyframes upDown{
+   
+	0% {
+	   top: 5px;
+	}
+   
+	10%{
+		top: 5px;
+	}
+   
+	20%{
+		top: -50px;
+	}
+   
+	30%{
+		top: -50px;
+	}
+   
+	40%{
+		top: -105px;
+	}
+ 50%{
+		top: -105px;
+	}
+   
+	 60%{
+		top: -160px;
+	}
+   
+	70%{
+		top: -160px;
+	}
+   
+	80%{
+		top: 30px;
+	}
+   
+	85% {
+		top: 5px;
+	}
+   
+	100% {
+		top: 5px;
+	}
+   
+}
+@keyframes color{
+   
+	0% {
+		background-position: left;
+	}
+   
+	100% {
+		background-position: right;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about{
+	position: absolute;
+	left: 205px;
+	top: 430px;
+	height: 80vh;
+	width: 65vw;
+	color: whitesmoke;
+	background:black;
+	box-shadow:0px 0px 10px skyblue;
+	z-index: 5;
+	background-size: 100% 100%;
+	border: solid 10px skyblue;
+	animation: priya 3s 1;
+	animation-direction: alternate-reverse;
+}
+@keyframes priya{
+   
+	100%{
+		top: 430px;
+		left: 0px;
+	}
+}
+
+.note{
+	height: 50vh;
+	width: 20vw;
+	background:url(priyaa.jpg);
+	background-size: 100% 100%;
+	position: absolute;
+	top: 535px;
+	left: 780px;
+	animation: anjani 3s infinite;
+	animation-direction: alternate-reverse;
+	box-shadow: 0px 0px 10px skyblue;
+	z-index: 5;
+	}
+
+@keyframes anjani{
+   
+	100%{
+		top: 535px;
+		left: 1000px;
+	}
+}
+
+
+.one{
+	padding-left: 40px;
+	position: absolute;
+	top: 240px;
+	color: skyblue;
+
+}
+.two{
+	padding: 40px;
+	position: absolute;
+	top: 260px;
+	color: skyblue;
+
+}
+
+#a{
+	height: 10px;
+
+
+}
+#project{
+	height: 16vh;
+	width: 8vw;
+	border: solid 2px black;
+	border-radius: 50%;
+	background: skyblue;
+	position: absolute;
+	left: 200px;
+	top: 350px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	box-shadow: 0px 0px 15px skyblue;
+	z-index: 5;
+
+}
+.aa{
+	height: 16vh;
+	width: 8vw;
+	border: solid 2px black;
+	border-radius: 50%;
+	background: skyblue;
+	position: absolute;
+	left: 50px;
+	top: 350px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	box-shadow: 0px 0px 15px skyblue;
+	z-index: 5;
+
+}
+
+#num{
+	position: absolute;
+	top: 38px;
+	left: 30px;
+	color: black;
+}
+
+
+
+
+.bb{
+	position: absolute;
+	top: 38px;
+	left: 18px;
+	color: black;
+}
+*{
+	font-family: Gill Sans,sans-serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+h1{
+	text-align: center;
+	font-family:serif;
+	color: black;
+}
+h3{
+	margin: 5px;
+	font-family: serif;
+	color: black;
+}
+#skill{
+	position: absolute;
+	top: 1100px;
+	left: 300px;
+	height: 65vh;
+	width: 700px;
+	margin: 60px auto;
+	background:black;
+	background-size: 100% 100%;
+	color:whitesmoke;
+	padding: 20px;
+	box-shadow: 0px 0px 20px skyblue;
+	border: solid 10px skyblue;
+}
+.skill li{
+	margin: 5px 0;
+	padding: 5px;
+}
+.bar{
+	background: #000000;
+	display: block;
+	height: 15px;
+	border: 1px solid rgba(135, 206, 235, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 5px rgba(135, 206, 235, 0.12),0 1px 5px rgba(135, 206, 235, 0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+	box-shadow:0px 0px 24px rgba(135, 206, 235, 0.25),0px 0px 20px rgba(135, 206, 235, 0.22) ;
+}
+.bar span{
+	height: 20px;
+	float: left;
+	background: skyblue;
+	
+}
+.html{
+	width: 90%;
+	animation: html 3s;
+}
+.css{
+	width: 70%;
+	animation: css 3s;
+}
+.coding{
+	width: 50%;
+	animation: coding 3s;
+}
+.javascript{
+	width: 40%;
+	animation: javascript 3s;
+}
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+@keyframes css{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 70%;
+	}
+}
+@keyframes coding{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:50% ;
+	}
+}
+@keyframes javascript{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 40%;
+	}
+}
+#box{
+height: 200px;
+width: 98.9vw;
+position: absolute;
+top: 1700px;
+background: black;
+border-top: solid 10px rgba(135, 206, 235, 0.8);
+border-bottom:solid 10px rgba(135, 206, 235, 0.8);
+box-shadow: 0px 0px 10px skyblue;
+}
+#dd{
+	position: absolute;
+	left: 70px;
+	top: 100px;
+	font-size: 20px;
+	font-family: cursive;
+	color: whitesmoke;
+
+}
+#ee{
+	position: absolute;
+	left: 550px;
+	top: 100px;
+	font-size: 20px;
+	font-family: cursive;
+	color: whitesmoke;
+}
+#ff{
+	position: absolute;
+	left: 1100px;
+	top: 80px;
+	font-size: 20px;
+	font-family: cursive;
+	color: whitesmoke;
+}
+h4{
+	font-size: 30px;
+	color: whitesmoke;
+}
+#para{
+	font-size: 50px;
+	font-family: serif;
+	color: skyblue;
+}
+#crown{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+	</style>
+</head>
+<body>
+	<nav id="nav" class="navbar fixed-top navbar-expand-lg">
+			 <a class="navbar-brand" href="#"><img src="crown.jpg" height="70px" width="80px" class="m-5"></a>
+  
+  
+	<ul class="navbar-nav">
+	  <li class="nav-item ">
+		<a class="nav-link" href="#page">Home <span></span></a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="#about">About</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="#skill">Skill</a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="#box">Contact</a>
+	  </li>
+	</ul>
+	
+</nav>
+	
+	
+	<div id="page">
+	<h1 class="one">PRIYA MAURYA</h1>
+	<div class="moving-text-container">
+		<div class="moving-text">
+	<p>WEB DEVEL0PER</p>
+	<p >CODER</p>
+	<p>LEARNING WEB</p>
+</div></div></div>
+<br><br><br><br>
+<div id="about"><br>
+<h2><center>About</center></h2>
+<h3 class="m-5 text-white">Hi,I am <big id="para">PRIYA MAURYA</big>,<br>nice to meet you!</h3>
+<p class="m-5 text-white">I'm a web developer.I am from sasaram<br>,bihar.Currently I am in patna.<br>Here you can know more about me.</p>
+<a class="aa" href="education.html"><p class="bb">education</p></a>
+<a id="project" href="projectt.html">
+	<p id="num">Project</p></a>
+</div>
+<div class="note" >
+	
+</div>
+</div><br><br><br><br>
+<br> <section id="xyz">
+<div id="skill">
+<h1 class="text-white">my skills</h1>	
+<li>
+<h3 class="text-white">Html</h3>	
+<span class="bar"><span class="html"></span>   </span>
+</li>
+<li>
+	<h3 class="text-white">Css</h3>
+	<span class="bar"><span class="css"></span> </span>
+</li>
+<li>
+	<h3 class="text-white" class="text-white">Coding</h3>
+	<span class="bar"> <span class="coding"></span></span>
+</li>
+<li>
+	<h3 class="text-white">Javascript</h3>
+	<span class="bar"><span class="javascript"></span>    </span>
+</li>
+</div>
+</section>
+<div id="box"><br>
+	<h4><center>Contact</center></h4>
+	<a id="ff" href="#">linkedIn</a>
+	<p id="dd">9155302622</p>
+	<p id="ee">mauryapriya99457@gmail.com</p>
+
+</div>
+
+</body>
+</html>
